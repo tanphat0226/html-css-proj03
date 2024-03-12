@@ -340,3 +340,53 @@ a {
   font-weight: 300;
   line-height: 1.75;
 }
+
+/* Work */
+.work {
+  margin-top: 60px;
+  padding: 100px 0;
+  background: #f6fbff;
+}
+
+.work__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.work-item {
+  width: 370px;
+  height: 402px;
+  padding: 43px;
+  border: 16px solid #eaf6ff;
+}
+
+.work-item:hover {
+  border-color: var(--primary-color);
+}
+
+.work-item:hover .work-item__btn {
+  color: var(--primary-color);
+}
+
+.work-item__title {
+  margin-top: 18px;
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.work-item__desc {
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.work-item .work-item__btn {
+  margin-top: 18px;
+  padding: 8px 14px 14px 0;
+}
