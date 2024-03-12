@@ -427,6 +427,10 @@ a {
   object-fit: cover;
 }
 
+.feature__content {
+  padding-top: 82px;
+}
+
 .feature__btn {
   margin-top: 38px;
 }
