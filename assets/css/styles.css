@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #10375c;
+  --white-color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.container {
+  width: 1170px;
+  min-width: calc(1170px - 48px);
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  font-size: 1rem;
+}
+
+.logo__icon {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: #2e80ce;
+}
+
+.logo__icon::after {
+  content: "";
+  position: absolute;
+  bottom: 0.3em;
+  right: 0.3em;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  background: var(--white-color);
+}
+
+.logo__text {
+  margin-left: 0.6em;
+  text-align: right;
+  font-family: Sora;
+  color: var(--white-color);
+  line-height: 1.6em;
+}
+
+.logo__text-top {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.logo__text-bottom {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+}
+
+.header__body {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item {
+}
+
+.navbar__item-link {
+  padding: 4px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.navbar__item-link--active {
+  color: var(--white-color);
+  font-weight: 400;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__item-link--active::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  transform: translateY(-2px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.navbar__item-link:hover {
+  color: var(--white-color);
+  text-shadow: 1px 0 0 currentColor;
+}
