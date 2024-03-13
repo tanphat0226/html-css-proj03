@@ -84,6 +84,32 @@ a {
   text-decoration: underline;
 }
 
+.btn--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #575f66;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #575f66;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn--icon:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.control .control__btn + .control__btn {
+  margin-left: 18px;
+  rotate: 180deg;
+}
+
 .logo {
   display: flex;
   font-size: 1rem;
@@ -363,8 +389,8 @@ a {
 }
 
 .work-item:hover {
-  margin-top: -16px;
   border-color: var(--primary-color);
+  transform: translateY(-16px);
 }
 
 .work-item:hover .work-item__btn {
@@ -432,5 +458,63 @@ a {
 }
 
 .feature__btn {
+  margin-top: 38px;
+}
+
+/* Member */
+.member__header {
+  text-align: center;
+}
+
+.member__header-btn {
+  margin-top: 38px;
+}
+
+.member__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  margin-top: 70px;
+}
+
+.member__img-bg {
+  padding: 28px 4px 0;
+  border-radius: 6px;
+  background: #eaf6ff;
+  overflow: hidden;
+}
+
+.member__img-thumb {
+  display: block;
+  max-width: 100%;
+  height: 290px;
+  object-fit: cover;
+  transition: 0.25s;
+}
+
+.member__img-bg:hover .member__img-thumb {
+  transform: scale(1.1);
+}
+
+.member__name {
+  margin-top: 12px;
+  color: var(--bg-color);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.member__job-title {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.857;
+}
+
+.member__controls {
+  display: flex;
+  justify-content: center;
   margin-top: 38px;
 }
