@@ -574,7 +574,7 @@ a {
 /* News */
 .news {
   margin-top: 70px;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .news__inner {
@@ -671,4 +671,38 @@ a {
 .news-item__btn.btn.btn--text:hover {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+/* Appointment */
+.appointment {
+  margin-top: 70px;
+}
+
+.appointment__inner {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f6fbff;
+}
+
+.appointment__desc {
+  width: 617px;
+  position: relative;
+  padding-top: 38px;
+  margin: 0 auto;
+}
+
+.appointment__desc::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 136px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.appointment__btn {
+  margin-top: 38px;
 }
