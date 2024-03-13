@@ -492,7 +492,7 @@ a {
   transition: 0.25s;
 }
 
-.member__img-bg:hover .member__img-thumb {
+.member__item:hover .member__img-thumb {
   transform: scale(1.1);
 }
 
@@ -517,4 +517,55 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 38px;
+}
+
+/* install */
+.install {
+  margin-top: 65px;
+
+  padding-top: 200px;
+}
+
+.install__inner {
+  display: flex;
+  background-color: var(--primary-color);
+}
+
+.install__img {
+  display: block;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+  margin: -95px 160px 0 70px;
+}
+
+.install__content {
+  padding-top: 76px;
+}
+
+.install__heading,
+.install__desc {
+  color: var(--white-color);
+}
+
+.install__heading {
+  max-width: 489px;
+}
+
+.install__desc {
+  width: 586px;
+}
+
+.install__download {
+  display: flex;
+  gap: 28px;
+  margin-top: 38px;
+}
+
+.install__btn-img {
+  transition: 0.25s;
+}
+
+.install__btn-img:hover {
+  transform: scale(1.05);
 }
